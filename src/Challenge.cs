@@ -198,7 +198,7 @@ namespace DesignPatternChallenge
             manager.SendPaymentReminder("+5511888888888", 150.00m, "whatsapp");
 
             // Perguntas para reflexão:
-            // - Como adicionar novos tipos de notificação (Telegram, Slack) sem modificar NotificationManager?
+            // - Como adicionar novos tipos de notificação (Telegram, Slack) sem modificar NotificationManager? - Na minha implementação basta criar uma nova classe de notificação e implementar a interface de envio, sem alterar o código existente
             // - Como evitar duplicação da lógica condicional em cada método?
             // - Como permitir que subclasses decidam qual tipo de notificação criar?
             // - Como tornar o código mais extensível e manutenível?
